@@ -15,6 +15,11 @@ namespace Dealership.Models
       _miles = miles;
     }
 
+    public void SetPrice(int newPrice)
+    {
+      _price = newPrice;
+    }
+
     public string GetMakeModel()
     {
       return _makeModel;
