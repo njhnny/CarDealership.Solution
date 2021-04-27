@@ -3,13 +3,14 @@ using Dealership.Models;
 
 namespace Dealership.Controllers
 {
-  public class HomeController : Controller
-  {
-    [Route("/")]
-    public ActionResult Index()
+    public class HomeController : Controller
     {
-      Car testCar = new Car("1974 Volkswagen Thing", 1100, 368792);
-      return View(testCar);
+
+      [HttpGet("/")]
+      public ActionResult Index()
+      {
+        return View();
+      }
+
     }
-  }
 }
