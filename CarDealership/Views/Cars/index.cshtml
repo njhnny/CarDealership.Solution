@@ -1,5 +1,11 @@
+@using CarDealership.Models;
+
 <h1>Car Dealership</h1>
 <ul>
-  <li>@Model.MakeModel</li>
+  @foreach (Car automobile in Model)
+  {
+    <li>@automobile.MakeModel</li>
+  }
+
 </ul>
 <a href="/cars/new">Add a new car.</a>
