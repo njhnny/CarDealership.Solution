@@ -1,15 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
-using Dealership.Models;
+using CarDealership.Models;
 
-namespace Dealership.Controllers
+namespace CarDealership.Controllers
 {
-  public class HomeController : Controller
-  {
-    [Route("/")]
-    public ActionResult Index()
+    public class HomeController : Controller
     {
-      Car testCar = new Car("1974 Volkswagen Thing", 1100, 368792);
-      return View(testCar);
+
+      [HttpGet("/")]
+      public ActionResult Index()
+      {
+        return View();
+      }
+
     }
-  }
 }
