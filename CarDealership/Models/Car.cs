@@ -1,8 +1,6 @@
-using System;
 using System.Collections.Generic;
 
-
-namespace Dealership.Models
+namespace CarDealership.Models
 {
   public class Car
   {
@@ -16,6 +14,7 @@ namespace Dealership.Models
       MakeModel = makeModel;
       // Price = price;
       // Miles = miles;
+      _instances.Add(this);
     }
 
     public static List<Car> GetAll()
