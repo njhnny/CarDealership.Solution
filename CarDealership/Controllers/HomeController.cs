@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using Dealership.Models;
+using CarDealership.Models;
 
-namespace Dealership.Controllers
+namespace CarDealership.Controllers
 {
     public class HomeController : Controller
     {
